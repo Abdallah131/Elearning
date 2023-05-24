@@ -1,0 +1,117 @@
+:root{
+    --Title : #3F3F3F;
+    --AddButton : #AC84BB;
+}
+body{
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-right img{
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header-right label{
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+  color: #3A4250;
+}
+.header-elements{
+  display: flex;
+}
+.header-elements p:active {
+  border-bottom: 2px solid #42A3FD;
+}
+.header-elements p{
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 80px;
+  margin-top: 35px;
+  color: #3A4250;
+}
+hr{
+  box-shadow: -2px 5px 13px 0px rgba(0,0,0,0.75);
+}
+#leftline{
+  margin-left: -10px;
+  height: 110px;
+  margin-top: -5px;
+}
+#rightline {
+  margin-right: 30px;
+  height: 110px;
+  margin-top: -5px;
+}
+#elearninglogo{
+  cursor: pointer;
+}
+.cards-container{
+  margin-left: 0px;
+}
+.card{
+  height: 522px;
+  width: 460px;
+  background-color: #F4F4F4;
+  box-shadow: -1px 1px 22px 0px rgba(0,0,0,0.35);
+  margin: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.uppercards{
+  display: flex;
+}
+.lowercards{
+  display: flex;
+}
+.card h1 {
+  color: #3A4250;
+  font-size: 22px;
+  margin-left: 15px;
+}
+.card p {
+  color: #3A4250;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.enrolandprices{
+  margin-left: 400px;
+  margin-top: -60px;
+}
+.enrolandprices button {
+  padding: 15px 50px;
+  margin-left: -120px;
+  margin-top: 0px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #42A3FD, #08C6A2);
+  border: none;
+  transition: 0.7s;
+}
+.enrolandprices button:hover{
+  transform: scale(1.05);
+  transition: 0.7s;
+  animation: buttonAnimation 3s alternate infinite;
+}
+
+@keyframes buttonAnimation {
+  0%{
+      background-position: 0%;
+  }
+  100%{
+      background-position: 100%;
+  }
+}

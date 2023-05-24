@@ -1,0 +1,214 @@
+:root{
+    --Title : #3F3F3F;
+    --AddButton : #AC84BB;
+}
+body{
+    background-image: linear-gradient(to bottom, #ae80b7,#aeabd6,#add6f6);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: hidden;
+}
+.main--container{
+    width: 1100px;
+    height: 680px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    box-shadow: 2px 3px 24px 1px rgba(0,0,0,0.61);
+    margin-left: 380px;
+}
+.header{
+    width: 1185px;
+    background-image: url("./images/stars.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    border-radius: 40px;
+    display: flex;
+    width: 100%;
+}
+.header h1{
+    margin-left: 280px;
+    margin-top: 50px;
+    color: var(--Title);
+    font-size: 50px;
+}
+#updateh1{
+    margin-left: 220px;
+}
+.header img{
+    width: 220px;
+    margin-left: -20px;
+    height: auto;
+}
+.inputs--container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+input,textarea {
+    border-radius: 10px;
+    text-indent: 30px;
+    margin-bottom: 13px;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.26);
+}
+input::placeholder,textarea::placeholder {
+    color: var(--Title);
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+textarea{
+    border: 2px solid #8E8E8E;
+    width: 459px;
+    height: 375px;
+}
+input{
+    width: 459px;
+    height: 50px;
+    border: 2px solid #8E8E8E;
+}
+.footer{
+    background-image: url("./images/stars.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    border-radius: 40px;
+    width: 100%;
+    display: flex;
+}
+.footer button{
+    margin-top: 30px;
+    height: 70px;
+    width: 400px;
+    margin-left: 380px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, #ae80b7,#aeabd6,#add6f6);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-size: 180%;
+    transition: 0.7s;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.26);
+
+}
+.footer button:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    animation: buttonAnimation 3s alternate infinite;
+}
+/* Delete Courses CSS */
+#delcntr{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#deleteTitle{
+    margin-left: 160px;
+}
+#delheader{
+    background-position-x: 70%;
+}
+#delheader img{
+   position: absolute;
+   right: 17%;
+   z-index: 1;
+}
+#deleteCoursesContainer{
+    margin-left: -120px;
+    margin-top: 0;
+}
+#delbtn{
+    margin-left: 120px;
+    background-image: none;
+    background-color: #26BDB4;
+}
+#bkimg{
+    position: absolute;
+    right:18.2%;
+    top: 5.3%;
+    width: 530px;
+    height: 808px;
+    opacity: 0.8;
+}
+/* Affect Course CSS*/
+.below--main {
+    height: 500px;
+    background-color: white;
+    width: 1000px;
+    border-radius: 40px;
+    position: absolute;
+    right: 23%;
+    box-shadow: 2px 3px 24px 1px rgba(0,0,0,0.61);
+}
+#affecthd{
+    background-image: none;
+}
+#affecthd h1 {
+    color: #141414;
+}
+#affectft{
+    background-image: none;
+}
+#maincontaineraffect{
+    border-radius: 0;
+    background-image: url("./images/3950.png ");
+    background-size: contain;
+}
+#maincontaineraffect h1 {
+    color: #1C1C1C;
+}
+#affectcourseinputs input {
+    width: 230px;
+    height: 50px;
+}
+.student--container{
+    margin-left: -30px;
+    text-align: center;
+}
+.intructor--container{
+    text-align: center;
+    margin-left: -100px;
+}
+#affectCourse {
+    margin-top: 550px;
+    background-image: none;
+    background-color: #008C7E;
+}
+.courses--container{
+    text-align: center;
+}
+#affectcourseinputs button {
+    margin-top: 25px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background-color: #008C7E;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.26);
+}
+#affectcourseinputs button:hover {
+    transform: scale(1.07);
+}
+#coursesradiobuttons input{
+    box-shadow: none;
+    height: 20px;
+    width: 20px;
+}
+.courses--container label {
+    font-weight: bold;
+}
+@keyframes buttonAnimation {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}

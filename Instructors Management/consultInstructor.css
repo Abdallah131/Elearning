@@ -1,0 +1,149 @@
+:root{
+  --Title : #3F3F3F;
+  --AddButton : #AC84BB;
+}
+body{
+  background-image: linear-gradient(to bottom, #ae80b7,#aeabd6,#add6f6);
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.header img {
+  cursor: pointer;
+  transition: 0.5s;
+  width: 140px;
+}
+.header img:hover {
+  transform: scale(1.07);
+}
+.header{
+  width: 1200px;
+  background-color: #435d7d;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header button{
+  margin-top: 15px;
+}
+.header h1 {
+  margin-left: 40px;
+  color: white;
+}
+.header .buttons {
+  margin-right: 40px;
+}
+.main--container{
+  width: 1200px;
+  height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 2px 3px 24px 1px rgba(0,0,0,0.61);
+  margin: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.edit-btn, .save-btn, .cancel-btn ,.update-btn{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.edit-btn {
+  background-color: #2196F3;
+}
+.save-btn {
+  display: none;
+}
+.cancel-btn {
+  background-color: #f44336;
+}
+tr.editing td:not(:last-child) {
+  border-bottom: none;
+}
+tr.editing .edit-btn {
+  display: none;
+}
+tr.editing .save-btn {
+  display: inline-block;
+}
+tr.editing .cancel-btn {
+  display: inline-block;
+}
+#addcoursesButton{
+  height:50px;
+  width: 180px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: -30px;
+  background-image: linear-gradient(to right,#45aaf2,#3867d6);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-size: 180%;
+  transition: 0.7s;
+  box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.26);
+
+}
+#addcoursesButton:hover{
+  transform: scale(1.05);
+  transition: 0.7s;
+  animation: buttonAnimation 3s alternate infinite;
+}
+#affectcourseButton{
+  height:50px;
+  width: 180px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: -30px;
+  background-image: linear-gradient(to right,#20bf6b,#3867d6);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  background-size: 180%;
+  transition: 0.7s;
+  box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.26);
+
+}
+#affectcourseButton:hover{
+  transform: scale(1.05);
+  transition: 0.7s;
+  animation: buttonAnimation 3s alternate infinite;
+}
+@keyframes buttonAnimation {
+  0%{
+      background-position: 0%;
+  }
+  100%{
+      background-position: 100%;
+  }
+}
